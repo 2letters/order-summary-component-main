@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: hsl(225, 100%, 94%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.background-desktop {
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.background-mobile {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+}
+
+main {
+    position: absolute;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 450px;
+    height: 697px;
+    border-radius: 20px;
+    box-shadow: 0 19px 25px -5px rgba(131, 129, 225, 0.2);
+}
+
+.image {
+    border-radius: 20px 20px 0 0;
+    width: 450px;
+    height: 220px;
+}
+
+h1 {
+    color: hsl(223, 47%, 23%);
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 37px;
+    margin-top: 46px;
+}
+
+.description {
+    color: hsl(224, 23%, 55%);
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: center;
+    letter-spacing: 0.005em;
+    margin: 16px 48px 0 48px;
+}
+
+.plan {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 15px;
+    width: 354px;
+    height: 98px;
+}
+
+.icon {
+    margin-left: 25px;
+}
+
+h3 {
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: -0.011em;
+    margin-bottom: 5px;
+}
+
+.price {
+    margin-left: 18px;
+    margin-right: 92px;
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: -0.015em;
+}
+
+.ref {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.015em;
+    color: hsl(245, 75%, 52%);
+    margin-right: 25px;
+    transition: 200ms cubic-bezier(.77, .01, .97, .98);
+}
+
+.ref:hover {
+color: #766CF1;
+}
+
+form {
+    margin-top: 32px;
+}
+
+button {
+    border: none;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    width: 354px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 0 20px 25px 5px rgba(56, 41, 224, 0.15);
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+    transition: 200ms cubic-bezier(.77, .01, .97, .98);
+}
+
+button:hover {
+    background-color: hsla(245, 83%, 68%, 1);
+}
+
+.back {
+    margin-top: 32px;
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    transition: 200ms cubic-bezier(.77, .01, .97, .98);
+}
+
+.back:hover {
+    color: #1F2F56;
+}
+
+@media screen and (max-width: 500px){
+
+    .background-desktop {
+        opacity: 0;
+    }
+
+    .background-mobile {
+        opacity: 1;
+    }
+
+    main {
+        width: 327px;
+        height: 567px;
+    }
+
+    .image {
+        width: 327px;
+        height: 160px;
+    }
+
+    h1 {
+        margin-top: 32px;
+    }
+
+    .description {
+        font-size: 15px;
+        line-height: 165%;
+        text-align: center;
+        letter-spacing: 0.005em;
+        margin: 16px 38px 0 38px;
+    }
+
+    .plan {
+        max-width: 279px;
+        max-height: 81px;
+    }
+
+    .icon {
+        margin-left: 16px;
+        max-width: 49px;
+        max-height: 49px;
+    }
+
+    h3 {
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: -0.02em;
+    }
+
+    .price {
+        margin-right: 50px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .ref {
+        font-size: 13px;
+        letter-spacing: 0.015em;
+        margin-right: 16px;
+    }
+
+    form {
+        margin-top: 24px;
+    }
+
+    button {
+        max-width: 279px;
+        height: 50px;
+        box-shadow: none;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 0.015em;
+        transition: 200ms cubic-bezier(.77, .01, .97, .98);
+    }
+
+    .back {
+        margin-top: 24px;
+    }
+}
