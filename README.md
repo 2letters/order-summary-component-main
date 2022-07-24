@@ -20,8 +20,8 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://)
-- Live Site URL: [Site](https://)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/flexbox-order-summary-component-yClJbgpQdd)
+- Live Site URL: [Site](https://order-summary-component-main-five-tawny.vercel.app/)
 
 ## My process
 
