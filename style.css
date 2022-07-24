@@ -8,7 +8,8 @@ html {
 
 body {
     height: 100%;
-    background-color: hsl(225, 100%, 94%);
+    background: hsl(225, 100%, 94%) url("/images/pattern-background-desktop.svg") no-repeat;
+    background-size: contain;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,10 +39,10 @@ main {
     height: 697px;
     border-radius: 20px;
     box-shadow: 0 19px 25px -5px rgba(131, 129, 225, 0.2);
+    overflow: hidden;
 }
 
 .image {
-    border-radius: 20px 20px 0 0;
     width: 450px;
     height: 220px;
 }
@@ -130,6 +131,7 @@ button {
     box-shadow: 0 20px 25px 5px rgba(56, 41, 224, 0.15);
     font-weight: 700;
     font-size: 15px;
+    font-family: 'Red Hat Display', sans-serif;
     line-height: 20px;
     letter-spacing: 0.015em;
     transition: 200ms cubic-bezier(.77, .01, .97, .98);
@@ -141,27 +143,27 @@ button:hover {
 
 .back {
     margin-top: 32px;
-    color: hsl(224, 23%, 55%);
     font-weight: 700;
     font-size: 15px;
     line-height: 20px;
     letter-spacing: 0.01em;
-    text-decoration: none;
     transition: 200ms cubic-bezier(.77, .01, .97, .98);
 }
 
-.back:hover {
+.back a {
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+}
+
+.back a:hover {
     color: #1F2F56;
 }
 
 @media screen and (max-width: 500px){
 
-    .background-desktop {
-        opacity: 0;
-    }
-
-    .background-mobile {
-        opacity: 1;
+    body {
+        background: hsl(225, 100%, 94%) url("/images/pattern-background-mobile.svg") no-repeat;
+        background-size: contain;
     }
 
     main {
@@ -223,7 +225,6 @@ button:hover {
     button {
         max-width: 279px;
         height: 50px;
-        box-shadow: none;
         font-weight: 700;
         font-size: 15px;
         line-height: 20px;
